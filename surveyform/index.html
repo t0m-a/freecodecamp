@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head><title>Mockup Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <LINK REL=StyleSheet HREF="style.css" TYPE="text/css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Mockup Survey Form">
+    <meta name="keywords" content="survey form,html5 form, mockup">
+    <meta name="author" content="Thomas Simon">
+</head>
+<body>   
+<header>
+    <img src="banner2.jpg" class="img-container"> 
+</header>    
+    <div class="main" id="main">
+      <h1 id="title" style="text-align: center; color: #99bbdd">Survey Form</h1><br> 
+      <p id="description" style="text-align: center">This is a survey form example for freecodeCamp challenge number 2.
+        Please fill in the required fields in the form below to join our newsletter:</p><br><br>
+
+<form action="/dummy-form-send-url" id="survey-form">
+            <p><label id="name-label">Name</label>:</p>
+              <p><input class="name" type="text" id="name" placeholder="Please insert your name in this field" required></p>
+       
+            <p><label id="email-label">Email</label>:</p>
+              <p><input class="email" type="email" id="email" placeholder="Please insert a valid email in this field" required></p>
+        
+            <p>Which frequency a month should we use to send you our newsletter?
+              <label id="number-label">Choose a number between 1 and 4</label> maximum:</p>
+            <p><input class="number" type="number" id="number" min="1" max="4" placeholder="Please insert a number in this field" required></p>
+            <p>Which <label id="">operating system</label> is your favorite?</p>
+            <div class="radio-buttons">
+              <label id="checkbox">
+                <input type="checkbox" class="checkboxes" name="favorite-operating-system" value="linux">GNU/Linux &nbsp
+            </label>
+            <label id="checkbox">
+                <input type="checkbox" name="favorite-operating-system" value="freebsd">FreeBSD &nbsp
+            </label>
+            <label id="checkbox">
+                <input type="checkbox" name="favorite-operating-system" value="openbsd">OpenBSD &nbsp
+            </label>
+            <label id="checkbox">
+                <input type="checkbox" name="favorite-operating-system" value="ms-windows">Microsoft Windows
+            </label>         
+            </div>
+            
+            <p>Which <label id="subjects-label">languages</label> should we email you about?</p>
+            <div id="dropdown">
+              <p><select class="dropdown-items" multiple>
+            <option value="go-lang">Go (Golang)</option>
+            <option value="python">Python</option>
+            <option value="javascript">JavaScript</option>
+            <option value="ruby">Ruby</option>
+            <option value="perl">Perl</option>
+            <option value="bash">Bash</option>
+            </select></p>
+            </div>        
+            <div class="comment"><p><textarea name="comment" form="usrform">Any suggestions?</textarea></p>
+            </div>
+            <p>Do you agree to register to our <a href="#" alt="Terms of Service (dummy link)" title="Terms of Service">terms of service</a>?
+                <label id="radio-buttons">Yes</label>
+                <input type="radio" name="radio" value="1"> 
+                <label id="radio-buttons">No</label>
+                <input type="radio" name="radio" value="2">     
+            </p>   
+            <div class="buttonHolder">
+            <button type="submit" id="submit" class="form-submit-button">Submit</button>
+            </div>
+</form>
+</div>
+<footer>
+<div class="footer-block"><p class="footer"><b>Thank you for visiting our page!</b></p>
+</div>
+</footer>
+</body>
+</html>
